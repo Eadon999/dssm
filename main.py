@@ -38,7 +38,7 @@ def main(unused_argv):
         eval_spec = tf.estimator.EvalSpec(input_fn=lambda: input_utils.eval_input_fn(FLAGS.eval_data, FLAGS.batch_size),
                                           start_delay_secs=60,
                                           throttle_secs = 30,
-                                          steps=1000)
+                                          steps=2)
         tf.estimator.train_and_evaluate(classifier, train_spec, eval_spec)
 
     def train_model():

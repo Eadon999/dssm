@@ -18,7 +18,7 @@ flags.DEFINE_boolean("train_eval", False, "Whether train and evaluate model or n
 
 flags.DEFINE_string("train_dir", "", "")
 flags.DEFINE_string("data_dir", "", "")
-flags.DEFINE_string("log_dir", "", "")
+# flags.DEFINE_string("log_dir", "", "")
 flags.DEFINE_string("ps_hosts", "","Comma-separated list of hostname:port pairs, you can also specify pattern like ps[1-5].example.com")
 flags.DEFINE_string("worker_hosts", "","Comma-separated list of hostname:port pairs, you can also specify worker[1-5].example.co")
 flags.DEFINE_string("job_name", "", "One of 'ps', 'worker'")

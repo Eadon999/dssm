@@ -13,10 +13,10 @@ doc_model_dir=./doc_model
 
 train_data=./data/*.tfrecord
 eval_data=./data/*.tfrecord  # 这里评估数据没有用，直接设置为训练数据
-train_steps=100000  # 训练步骤
+train_steps=4  # 训练步骤
 batch_size=512
 learning_rate=0.001
-save_steps=100000
+save_steps=2
 char_embedding_size=200
 rnn_hidden_size=128
 query_max_char_length=50
